@@ -40,7 +40,7 @@ jobs:
         env:
           CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
         with:
-          file: ${{runner.workspace}}/lcov.info
+          files: ${{runner.workspace}}/lcov.info
           verbose: true
           fail_ci_if_error: true
   build:
